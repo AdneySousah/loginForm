@@ -20,5 +20,3 @@ Este projeto é uma interface de login estilizada com HTML e CSS puro. O destaqu
 - **HTML5**
 - **CSS3**
 - **Boxicons** (para ícones no formulário)
-
-## 📁 Estrutura de Arquivos
