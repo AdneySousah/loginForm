@@ -1,0 +1,90 @@
+.estrelas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.estrelas::before,
+.estrelas::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+         radial-gradient(1px 1px at 5% 10%, #fff, transparent),
+        radial-gradient(2px 2px at 15% 20%, #fff, transparent),
+        radial-gradient(3px 3px at 25% 15%, #fff, transparent),
+        radial-gradient(2px 2px at 35% 10%, #fff, transparent),
+        radial-gradient(1px 1px at 45% 5%, #fff, transparent),
+        radial-gradient(2px 2px at 55% 12%, #fff, transparent),
+        radial-gradient(3px 3px at 65% 18%, #fff, transparent),
+        radial-gradient(2px 2px at 75% 8%, #fff, transparent),
+        radial-gradient(1px 1px at 85% 15%, #fff, transparent),
+        radial-gradient(2px 2px at 95% 12%, #fff, transparent),
+
+        radial-gradient(2px 2px at 5% 30%, #fff, transparent),
+        radial-gradient(1px 1px at 15% 35%, #fff, transparent),
+        radial-gradient(3px 3px at 25% 40%, #fff, transparent),
+        radial-gradient(2px 2px at 35% 38%, #fff, transparent),
+        radial-gradient(1px 1px at 45% 30%, #fff, transparent),
+        radial-gradient(2px 2px at 55% 33%, #fff, transparent),
+        radial-gradient(3px 3px at 65% 29%, #fff, transparent),
+        radial-gradient(2px 2px at 75% 31%, #fff, transparent),
+        radial-gradient(1px 1px at 85% 34%, #fff, transparent),
+        radial-gradient(2px 2px at 95% 28%, #fff, transparent),
+
+        radial-gradient(3px 3px at 5% 50%, #fff, transparent),
+        radial-gradient(2px 2px at 15% 55%, #fff, transparent),
+        radial-gradient(1px 1px at 25% 52%, #fff, transparent),
+        radial-gradient(2px 2px at 35% 58%, #fff, transparent),
+        radial-gradient(3px 3px at 45% 54%, #fff, transparent),
+        radial-gradient(2px 2px at 55% 59%, #fff, transparent),
+        radial-gradient(1px 1px at 65% 50%, #fff, transparent),
+        radial-gradient(3px 3px at 75% 53%, #fff, transparent),
+        radial-gradient(2px 2px at 85% 56%, #fff, transparent),
+        radial-gradient(1px 1px at 95% 51%, #fff, transparent),
+
+        radial-gradient(1px 1px at 5% 70%, #fff, transparent),
+        radial-gradient(3px 3px at 15% 75%, #fff, transparent),
+        radial-gradient(2px 2px at 25% 78%, #fff, transparent),
+        radial-gradient(1px 1px at 35% 72%, #fff, transparent),
+        radial-gradient(2px 2px at 45% 76%, #fff, transparent),
+        radial-gradient(3px 3px at 55% 70%, #fff, transparent),
+        radial-gradient(2px 2px at 65% 74%, #fff, transparent),
+        radial-gradient(1px 1px at 75% 77%, #fff, transparent),
+        radial-gradient(2px 2px at 85% 71%, #fff, transparent),
+        radial-gradient(3px 3px at 95% 79%, #fff, transparent),
+
+        radial-gradient(2px 2px at 5% 90%, #fff, transparent),
+        radial-gradient(1px 1px at 15% 95%, #fff, transparent),
+        radial-gradient(3px 3px at 25% 91%, #fff, transparent),
+        radial-gradient(2px 2px at 35% 94%, #fff, transparent),
+        radial-gradient(1px 1px at 45% 93%, #fff, transparent),
+        radial-gradient(3px 3px at 55% 97%, #fff, transparent),
+        radial-gradient(2px 2px at 65% 92%, #fff, transparent),
+        radial-gradient(1px 1px at 75% 95%, #fff, transparent),
+        radial-gradient(2px 2px at 85% 90%, #fff, transparent),
+        radial-gradient(3px 3px at 95% 98%, #fff, transparent);
+    animation: brilhar1 3s infinite ease-in-out alternate;
+}
+
+.estrelas::after {
+    animation: brilhar2 4s infinite ease-in-out alternate;
+    opacity: 0.5;
+}
+
+
+@keyframes brilhar1 {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+}
+
+@keyframes brilhar2 {
+    0% { opacity: 0.1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 0.1; }
+}
+
